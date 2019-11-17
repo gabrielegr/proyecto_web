@@ -1,13 +1,9 @@
 <?php
 	class Reserva{
 		private $id;
-		private $usuario;
-		private $fecha;
-        private $h_inicio;
-        private $h_fin;
-        private $cantidad;
-        private $descripcion;
-        private $estado;
+		private $nombre;
+        private $contraseña;
+        private $tipo;
  
 		function __construct(){}
  
