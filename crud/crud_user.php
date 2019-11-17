@@ -44,7 +44,7 @@ require_once('conexion.php');
 			$user=$select->fetch();
 			$myUser= new User();
 			$myUser->setNombre($user['nombre']);
-			$myUser->setAutor($user['tipo']);
+			$myUser->setTipo($user['tipo']);
 			return $myUser;
         }
         

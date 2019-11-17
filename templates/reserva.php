@@ -1,32 +1,29 @@
 <?php
 	class Reserva{
 
-		private $usuario;
 		private $fecha;
         private $hinicio;
 		private $hfin;
         private $cantidad;
         private $descripcion;
-        private $estado;
- 
-		function __construct($usuario, $fecha, $hinicio, $hfin, $cantidad, $descripcion){
-			$this->usuario = $usuario;
+		private $estado;
+		private $id;
+		private $frecuencia;
+
+
+		
+		function __construct( $fecha, $hinicio, $hfin, $cantidad, $descripcion,$usuario,$frecuencia){
+			$this->id=$usuario . $fecha . $hinicio;
 			$this->fecha = $fecha;   
 			$this->hinicio = $hinicio;   
 			$this->hfin = $hfin;   
 			$this->cantidad = $cantidad;   
-			$this->descripcion = $descripcion;   
+			$this->descripcion = $descripcion;  
+			$this->frecuencia= $frecuencia; 
 			$this->estado = false;   
 
 		}
- 
-		public function getUsuario(){
-		return $this->usuario;
-		}
- 
-		public function setNombre($usuario){
-			$this->usuario = $usuario;
-		}
+
  
 		public function getFecha(){
 			return $this->fecha;
@@ -74,8 +71,22 @@
 		public function setEstado($estado){
 			$this->estado = $estado;
 		}
+
+		public function getId(){
+			return $this->id;
+		}
+ 
+		public function setId($id){
+			$this->id = $id;
+		}	
 	
-	
+		public function getFrecuencia(){
+			return $this->frecuencia;
+		}
+ 
+		public function setFrecuencia($frecuencia){
+			$this->frecuencia = $frecuencia;
+		}	
 	
 	}
 ?>

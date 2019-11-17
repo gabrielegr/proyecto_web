@@ -2,13 +2,11 @@
 	class Laboratorio{
 		private $numero;
         private $puestos;
-        private $frecuencia;
  
-		function __construct($numero,$puestos,$frecuencia){
+		function __construct($numero,$puestos){
 
 			$this->numero = $numero;
 			$this->puestos = $puestos;   
-			$this->frecuencia = $frecuencia;   
 		}
  
 		public function getNumero(){
@@ -27,13 +25,7 @@
 			$this->puestos= $puestos;
 		}
  
-		public function getFrecuencia(){
-		return $this->frecuencia;
-		}
- 
-		public function setFrecuencia($frecuencia){
-			$this->frecuencia = $frecuencia;
-		}
+
 
 	}
 ?>
