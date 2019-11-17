@@ -1,11 +1,15 @@
 <?php
 	class Reserva{
-		private $id;
 		private $nombre;
         private $contraseña;
         private $tipo;
  
-		function __construct(){}
+		function __construct($nombre,$contraseña,$tipo){
+
+			$this->nombre = $nombre;
+			$this->contraseña = $contraseña;   
+			$this->tipo = $tipo;   
+		}
  
 		public function getNombre(){
 		return $this->nombre;
@@ -15,27 +19,21 @@
 			$this->nombre = $nombre;
 		}
  
-		public function getAutor(){
-			return $this->autor;
+		public function getContraseña(){
+			return $this->contraseña;
 		}
  
-		public function setAutor($autor){
-			$this->autor = $autor;
+		public function setContraseña($contraseña){
+			$this->contraseña= $contraseña;
 		}
  
-		public function getAnio_edicion(){
-		return $this->anio_edicion;
+		public function getTipo(){
+		return $this->tipo;
 		}
  
-		public function setAnio_edicion($anio_edicion){
-			$this->anio_edicion = $anio_edicion;
+		public function setTipo($tipo){
+			$this->anio_tipo = $tipo;
 		}
-		public function getId(){
-			return $this->id;
-		}
- 
-		public function setId($id){
-			$this->id = $id;
-		}
+
 	}
 ?>

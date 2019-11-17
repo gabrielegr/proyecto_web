@@ -1,45 +1,81 @@
 <?php
 	class Reserva{
-		private $id;
+
 		private $usuario;
 		private $fecha;
-        private $h_inicio;
-        private $h_fin;
+        private $hinicio;
+		private $hfin;
         private $cantidad;
         private $descripcion;
         private $estado;
  
-		function __construct(){}
- 
-		public function getNombre(){
-		return $this->nombre;
+		function __construct($usuario, $fecha, $hinicio, $hfin, $cantidad, $descripcion){
+			$this->usuario = $usuario;
+			$this->fecha = $fecha;   
+			$this->hinicio = $hinicio;   
+			$this->hfin = $hfin;   
+			$this->cantidad = $cantidad;   
+			$this->descripcion = $descripcion;   
+			$this->estado = false;   
+
 		}
  
-		public function setNombre($nombre){
-			$this->nombre = $nombre;
+		public function getUsuario(){
+		return $this->usuario;
 		}
  
-		public function getAutor(){
-			return $this->autor;
+		public function setNombre($usuario){
+			$this->usuario = $usuario;
 		}
  
-		public function setAutor($autor){
-			$this->autor = $autor;
+		public function getFecha(){
+			return $this->fecha;
 		}
  
-		public function getAnio_edicion(){
-		return $this->anio_edicion;
+		public function setFecha($fecha){
+			$this->fecha = $fecha;
 		}
  
-		public function setAnio_edicion($anio_edicion){
-			$this->anio_edicion = $anio_edicion;
-		}
-		public function getId(){
-			return $this->id;
+		public function getHinicio(){
+		return $this->hinicio;
 		}
  
-		public function setId($id){
-			$this->id = $id;
+		public function setHinicio($hinicio){
+			$this->hinicio = $hinicio;
 		}
+
+		public function getHfin(){
+			return $this->hfin;
+		}
+ 
+		public function setHfin($hfin){
+			$this->hfin = $hfin;
+		}
+		public function getCantidad(){
+			return $this->cantidad;
+		}
+ 
+		public function setCantidad($cantidad){
+			$this->cantidad = $cantidad;
+		}
+
+		public function getDescripcion(){
+			return $this->descripcion;
+		}
+ 
+		public function setDescripcion($descripcion){
+			$this->descripcion = $descripcion;
+		}
+
+		public function getEstado(){
+			return $this->estado;
+		}
+ 
+		public function setEstado($estado){
+			$this->estado = $estado;
+		}
+	
+	
+	
 	}
 ?>
