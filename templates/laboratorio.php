@@ -8,7 +8,7 @@
 			$this->numero = $numero;
 			$this->puestos = $puestos;   
 		}
- 
+
 		public function getNumero(){
 		return $this->numero;
 		}

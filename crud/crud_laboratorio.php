@@ -26,7 +26,24 @@ require_once('conexion.php');
 			}
 			return $listaLaboratorios;
         }
+		
+		
+		public function mostrarOcupado($dia,$hora){
+			$db=Db::conectar();
+			$listaLaboratorios=[];
+			$select=$db->query('SELECT l.numero FROM laboratorio l, reserva r where l.puesto=l.lleno and extract(isodow from date r.fecha) =:dia AND r.h_inicio=:hora ');
+            $select->bindValue('dia',$dia);
+			$select->bindValue('hora',$hora);
+			foreach($select->fetchAll() as $laboratorio){
+				$myLaboratorio= new Laboratorio();
+				$myLaboratorio->setNumero($laboratorio['numero']);
+				$listaLaboratorios=$myLaboratorio;
+			}
+			return $listaLaboratorios;
+        }
         
+
+
 		public function eliminar($numero){
 			$db=Db::conectar();
 			$eliminar=$db->prepare('DELETE FROM laboratorio WHERE numero=:numero');

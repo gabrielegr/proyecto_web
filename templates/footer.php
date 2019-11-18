@@ -1,5 +1,5 @@
-</section>
+
 	<footer>
-Derechos reservados UCA 2019
+<center>Derechos reservados UCA 2019</center>
     </footer>
 </body>
