@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+mim r j  jr r 
+=======
 $(document).ready(function(){
 	//Mostrar menu mobil
 	$('.ShowMenuMobile').on('click', function(){
@@ -28,3 +31,4 @@ $(document).ready(function(){
 		}
 	});
 });
+>>>>>>> c7a56879863598315abf3f21fedfa5e4743881f3
