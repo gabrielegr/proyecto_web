@@ -68,7 +68,7 @@ font-weight: 600;
 color: #00bcd4;
 }
 a {
-color: #FFFFFF;
+color: rgb(22, 22, 22) 20, 20);
 }
 .w3layouts{
 padding:30px 50px 40px;
@@ -129,19 +129,27 @@ letter-spacing: 1px;
 display: block;
 text-transform: capitalize;
 }
+ .form-group label{
+color:black;
+}
 
-input[type="text"], input[type="email"], select, select.dropdown{
+
+
+input[type="text"], input[type="email"],input[type="password"], select, select.dropdown{
 width: 96%;
 padding: 0.6em;
 border: 1px solid #999797;
 font-size: .9em;
 letter-spacing:.5px;
 outline: none;
-color: #fff;
+color: rgb(255, 255, 255);
 background-color: transparent;
 margin-bottom: 1.2em;
 font-family: 'Open Sans', sans-serif;
 }
+.form-group input{
+    color:black;
+    }
 select {
 width: 31%;
 float: left;
