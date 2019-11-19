@@ -1,3 +1,15 @@
+	
+<?php
+
+require_once('../crud/crud_laboratorio.php');
+require_once('laboratorio.php');
+require_once('../crud/conexion.php');
+$crud=new CrudLaboratorio();
+$laboratorio= new Laboratorio();	
+$listaLaboratorios=$crud->mostrarOcupado();
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>

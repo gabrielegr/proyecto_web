@@ -7,24 +7,36 @@
 			<div class="limiter">
 				<div class="container-table100">
 					<div class="wrap-table100">
-						
+					<?php foreach ($listaLaboratorios as $laboratorio) {?>	
 						<div class="table100 ver5 m-b-110">
 							<table data-vertable="ver5">
 								<thead>
 									<tr class="row100 head">
 										<th class="column100 column1" data-column="column1">Hora</th>
-										<th class="column100 column2" data-column="column2">Sunday</th>
-										<th class="column100 column3" data-column="column3">Monday</th>
-										<th class="column100 column4" data-column="column4">Tuesday</th>
-										<th class="column100 column5" data-column="column5">Wednesday</th>
-										<th class="column100 column6" data-column="column6">Thursday</th>
-										<th class="column100 column7" data-column="column7">Friday</th>
-										<th class="column100 column8" data-column="column8">Saturday</th>
+										<th class="column100 column2" data-column="column2">Monday</th>
+										<th class="column100 column3" data-column="column3">Tuesday</th>
+										<th class="column100 column4" data-column="column4">Wednesday</th>
+										<th class="column100 column5" data-column="column5">Thursday</th>
+										<th class="column100 column6" data-column="column6">Friday</th>
+										<th class="column100 column7" data-column="column7">Saturday</th>
+										<th class="column100 column8" data-column="column8">Sunday</th>
+										
 									</tr>
 								</thead>
 								<tbody>
 									<tr class="row100">
-										<td class="column100 column1" data-column="column1">--</td>
+										<td class="column100 column1" data-column="column1">7:00</td>
+										<td class="column100 column2" data-column="column2"><?php echo $laboratorio->getNumero() ?></td>
+										<td class="column100 column3" data-column="column3">--</td>
+										<td class="column100 column4" data-column="column4">--</td>
+										<td class="column100 column5" data-column="column5">--</td>
+										<td class="column100 column6" data-column="column6">--</td>
+										<td class="column100 column7" data-column="column7">--</td>
+										<td class="column100 column8" data-column="column8">--</td>
+									</tr>
+		
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">8:00</td>
 										<td class="column100 column2" data-column="column2">--</td>
 										<td class="column100 column3" data-column="column3">--</td>
 										<td class="column100 column4" data-column="column4">--</td>
@@ -35,7 +47,7 @@
 									</tr>
 		
 									<tr class="row100">
-										<td class="column100 column1" data-column="column1">--</td>
+										<td class="column100 column1" data-column="column1">9:00</td>
 										<td class="column100 column2" data-column="column2">--</td>
 										<td class="column100 column3" data-column="column3">--</td>
 										<td class="column100 column4" data-column="column4">--</td>
@@ -46,7 +58,7 @@
 									</tr>
 		
 									<tr class="row100">
-										<td class="column100 column1" data-column="column1">--</td>
+										<td class="column100 column1" data-column="column1">10:00</td>
 										<td class="column100 column2" data-column="column2">--</td>
 										<td class="column100 column3" data-column="column3">--</td>
 										<td class="column100 column4" data-column="column4">--</td>
@@ -56,8 +68,9 @@
 										<td class="column100 column8" data-column="column8">--</td>
 									</tr>
 		
+
 									<tr class="row100">
-										<td class="column100 column1" data-column="column1">--</td>
+										<td class="column100 column1" data-column="column1">11:00</td>
 										<td class="column100 column2" data-column="column2">--</td>
 										<td class="column100 column3" data-column="column3">--</td>
 										<td class="column100 column4" data-column="column4">--</td>
@@ -66,9 +79,10 @@
 										<td class="column100 column7" data-column="column7">--</td>
 										<td class="column100 column8" data-column="column8">--</td>
 									</tr>
-		
+
+
 									<tr class="row100">
-										<td class="column100 column1" data-column="column1">--</td>
+										<td class="column100 column1" data-column="column1">12:00</td>
 										<td class="column100 column2" data-column="column2">--</td>
 										<td class="column100 column3" data-column="column3">--</td>
 										<td class="column100 column4" data-column="column4">--</td>
@@ -77,9 +91,9 @@
 										<td class="column100 column7" data-column="column7">--</td>
 										<td class="column100 column8" data-column="column8">--</td>
 									</tr>
-		
+
 									<tr class="row100">
-										<td class="column100 column1" data-column="column1">--</td>
+										<td class="column100 column1" data-column="column1">13:00</td>
 										<td class="column100 column2" data-column="column2">--</td>
 										<td class="column100 column3" data-column="column3">--</td>
 										<td class="column100 column4" data-column="column4">--</td>
@@ -88,9 +102,10 @@
 										<td class="column100 column7" data-column="column7">--</td>
 										<td class="column100 column8" data-column="column8">--</td>
 									</tr>
-		
+
+
 									<tr class="row100">
-										<td class="column100 column1" data-column="column1">--</td>
+										<td class="column100 column1" data-column="column1">14:00</td>
 										<td class="column100 column2" data-column="column2">--</td>
 										<td class="column100 column3" data-column="column3">--</td>
 										<td class="column100 column4" data-column="column4">--</td>
@@ -99,9 +114,9 @@
 										<td class="column100 column7" data-column="column7">--</td>
 										<td class="column100 column8" data-column="column8">--</td>
 									</tr>
-		
+
 									<tr class="row100">
-										<td class="column100 column1" data-column="column1">--</td>
+										<td class="column100 column1" data-column="column1">15:00</td>
 										<td class="column100 column2" data-column="column2">--</td>
 										<td class="column100 column3" data-column="column3">--</td>
 										<td class="column100 column4" data-column="column4">--</td>
@@ -110,6 +125,31 @@
 										<td class="column100 column7" data-column="column7">--</td>
 										<td class="column100 column8" data-column="column8">--</td>
 									</tr>
+
+
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">16:00</td>
+										<td class="column100 column2" data-column="column2">--</td>
+										<td class="column100 column3" data-column="column3">--</td>
+										<td class="column100 column4" data-column="column4">--</td>
+										<td class="column100 column5" data-column="column5">--</td>
+										<td class="column100 column6" data-column="column6">--</td>
+										<td class="column100 column7" data-column="column7">--</td>
+										<td class="column100 column8" data-column="column8">--</td>
+									</tr>
+
+
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">17:00</td>
+										<td class="column100 column2" data-column="column2">--</td>
+										<td class="column100 column3" data-column="column3">--</td>
+										<td class="column100 column4" data-column="column4">--</td>
+										<td class="column100 column5" data-column="column5">--</td>
+										<td class="column100 column6" data-column="column6">--</td>
+										<td class="column100 column7" data-column="column7">--</td>
+										<td class="column100 column8" data-column="column8">--</td>
+									</tr>
+
 								</tbody>
 							</table>
 						</div>
@@ -154,3 +194,4 @@
 				</div>
 			</div>
 		</div>
+	</section>
