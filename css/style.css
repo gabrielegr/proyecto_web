@@ -55,6 +55,13 @@ html, body{
 }
 .formated-section{
 	padding: 60px 0;
+	
+}
+
+.formated-section .row{
+	display: flex;
+	justify-content: space-around;
+	
 }
 .font-oswald{
 	font-family: 'OswaldRegular';
