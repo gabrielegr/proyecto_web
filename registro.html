@@ -13,8 +13,6 @@
 		<nav class="full-width NavBarP-Nav">
 			<ul class="full-width list-unstyled">
 				<li><a href="index.html">Inicio</a></li>
-				<li><a href="#!">Contactenos</a></li>
-				<li><a href="#!">Acerca de</a></li>
 				<li>
 					<a href="#!" class="btn-login"><i class="fa fa-user" aria-hidden="true"></i>Log In</a>
 					<div class="full-width Login">
@@ -22,15 +20,15 @@
 							<form action="">
 								<div class="form-group">
 									<label for="email"><i class="fa fa-envelope" aria-hidden="true"></i>E-mail</label>
-									<input type="text" class="form-control" name="email" id="email">
+									<input type="text" class="form-control" name="email" id="email_field">
 								</div>
 								<div class="form-group">
 									<label for="password"><i class="fa fa-lock" aria-hidden="true"></i>Contraseña</label>
-									<input type="text" class="form-control" name="password" id="password">
+									<input type="text" class="form-control" name="password" id="password_field">
 								</div>
 								<p class="text-center">
 									<a href="#!" class="btn btn-danger btn-login" style="display:inline-block !important;">CANCELAR</a>
-									<button type="submit" class="btn btn-primary">INICIAR SESIÓN</button>
+									<button type="submit" class="btn btn-primary" id="login_btn">INICIAR SESIÓN</button>
 								</p>
 							</form>
 							<hr>
@@ -82,5 +80,7 @@
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/create_account.js"></script>
+	<script src="js/login.js"></script>
 </body>
 </html>
