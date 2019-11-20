@@ -3,6 +3,7 @@
 		<div class="banner-content">
 			<h1>Laboratorios DEI UCA</h1>
 			
+			
 
 			<div class="limiter">
 				<div class="container-table100">
@@ -156,7 +157,6 @@
 					</div>
 				
     </div>
-
 		</div>
 	</section>
 	
